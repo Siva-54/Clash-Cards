@@ -31,6 +31,7 @@ table {
     border-radius: 10px;
     padding: 5px;
     line-height: 2;
+
 }
 li {
     color: black;
@@ -140,12 +141,33 @@ ul {
     padding: 0;
 }
 
-ul li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-    unicode-bidi: isolate;
+#instructions{
     font-family: 'Montserrat', sans-serif;
     color: black;
     font-size: 20px;
-    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-top: 3%;
+}   
+
+#inst button{
+    margin: 5px;
+    width: 15vb;
+    height: 5vh;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #FFF59D;
+    margin-bottom: 40px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: larger;
+    text-align: center;
+}
+
+#inst button:hover{
+    background-color: white;
 }

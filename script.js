@@ -15,9 +15,22 @@
     //Showing instructions
     window.onload = function() {
         $("#main").html(`<center><div id="inst"><h3 class = "game-title">Clash Cards!</h3>
-        <h4>Instructions For Game - </h4>
-        <br/><br/>
-        <li>Make pairs of similiar blocks by flipping them.</li><li>To flip a block you can click on it.</li><li>If two blocks you clicked are not similar, they will be flipped back.</li><li>Complete the game, comment your score and challenge your friends too.</li><p style = "font-size: 25px; font-weight: 400; margin-top: 90px;">Click one of the following mode to start the game.</p><button class = "btn btn-outline-light btn-lg modes" onclick="start(3, 4)">3 x 4</button> <button class = "btn btn-outline-light btn-lg modes" onclick="start(4, 4)" style="w">4 x 4</button><button class = "btn btn-outline-light btn-lg modes" onclick="start(4, 5)">4 x 5</button><button class = "btn btn-outline-light btn-lg modes" onclick="start(5, 6)">5 x 6</button></div></center>`);
+        <h4>Instructions For Game </h4>
+        <div id="instructions">
+        <ul>
+        <li>Make pairs of similiar blocks by flipping them.</li>
+        <li>To flip a block you can click on it.</li>
+        <li>If two blocks you clicked are not similar, they will be flipped back.</li>
+        <li>Complete the game, comment your score and challenge your friends too.</li>
+        </ul>
+        </div>
+        <p style = "font-size: 25px; font-weight: 400; margin-top: 30px;">Click one of the following mode to start the game.
+        </p>
+         <button onclick="start(3, 4)">3 x 4</button>
+         <button onclick="start(4, 4)" style="w">4 x 4</button>
+         <button onclick="start(4, 5)">4 x 5</button>
+         <button onclick="start(5, 6)">5 x 6</button>
+        </div></center>`);
     }
 
     //Starting the game
